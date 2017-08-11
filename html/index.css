@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+/* 公用头部 */
+header {
+    height: 100px;
+    background-color: #f95959;
+}
+
+/* 公用尾部 */
+footer {
+    background-color: yellow;
+}
+
+/* 首页 */
+.home {
+    background-color: pink;
+}
+
+/* 产品页 */
+.product {
+    background-color: green;
+}

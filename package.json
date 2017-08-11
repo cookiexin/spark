@@ -1,0 +1,19 @@
+{
+  "name": "spark",
+  "version": "1.1.0",
+  "main": "templates/index.html",
+  "scripts": {
+    "dev": "gulp dev",
+    "ejs": "gulp ejs"
+  },
+  "author": "cloudIC",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "ejs": "^2.3.4",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-ejs": "^1.2.1",
+    "gulp-util": "^3.0.4"
+  }
+}
