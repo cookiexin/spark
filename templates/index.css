@@ -1,11 +1,28 @@
 body {
     margin: 0;
 }
+.container {
+    width: 100%;
+}
 
 /* 公用头部 */
 header {
     height: 100px;
     background-color: #f95959;
+}
+#logo {
+    
+}
+#nav-header {
+    
+}
+#nav-header li {
+    display: inline-block;
+    font-family:Helvetica;
+    font-size:36px;
+    color:#ffffff;
+    letter-spacing:0;
+    text-align:center;
 }
 
 /* 公用尾部 */
