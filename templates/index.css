@@ -50,19 +50,31 @@ header {
     background-color: #777777;
     border:1px solid #979797;
 }
-.subscribe-container {
+.subscribe-part {
     /* padding: 108px 225px; */
     padding-top: 108px;
     background:rgba(249,89,89,0.10);
+}
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 990px;
 }
 h2.subscribe-description {
     margin-bottom: 40px;
     font-family: PingFangSC-Regular;
     font-size: 32px;
 }
+.subscribe-func {
+    display: flex;
+    width: 100%;
+}
 input.subscribe-input {
-    width: 683px;
+    flex-grow: 1;
     height: 73px;
+    margin-right: 33px;
     padding: 12px 0 12px 22px;
     box-sizing: border-box;
     background: #ffffff;
@@ -80,6 +92,9 @@ button.btn-subscribe {
 }
 
 /* homepage */
+#homepage {
+    font-family:Helvetica;
+}
 #homepage .banner {
     background:#ffffff;    
     font-family:Helvetica;
@@ -102,24 +117,24 @@ section.section-limited { height: 550px;}
     background:#edf8fa;
 }
 #products-display section.section-limited {
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    align-items: center;
     display: relative;
-    padding: 6% 50px;
+    /* padding: 6% 50px; */
     box-sizing: border-box;
 }
 .product-img {
-    float: left;
-    /* margin-right: 90px; */
-    /* padding-top: 30px; */
+    margin-right: 90px; 
+    flex-basis: 43%;
+    text-align: center;
 }
 
 .product-word {
-    float: right;
-    width: 640px;
+    /* float: right;
+    width: 640px; */
+    flex: 0 1 650px;
     margin-top: -18px;
     color: #000000;
-    font-family:Helvetica;
     letter-spacing: 0;
     text-align: left;
 }
