@@ -6,9 +6,14 @@
   <title>spark</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/page.css">
+  <style>
+    .homepage .nav-header li:first-child a::after {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <div id="homepage" class="container">
+  <div class="homepage container">
     <%- include _partial/header %>
     <div class="main">
       <!-- banner -->
@@ -17,7 +22,7 @@
         <h2>Book Online for the Best Gear</h2>
       </section>
       <!-- products display-->
-      <div id="products-display">
+      <div class="products-display">
         <!-- product-item1 -->        
         <section class="item1 section-limited">
           <div class="product-img">

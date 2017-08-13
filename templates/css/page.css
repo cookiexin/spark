@@ -9,10 +9,10 @@
 #homepage .banner h1 { font-size: 64px;}
 #homepage .banner h2 { font-size: 36px;}
 
-/* #products-display section:first-child {
+/* .products-display section:first-child {
     background:#edf8fa;
 } */
-#products-display section.section-limited {
+.products-display section.section-limited {
     display: flex;
     align-items: center;
     display: relative;
@@ -80,18 +80,18 @@ button.btn-book {
 }
 
 /* productpage */
-#productpage .banner {
+.productpage .banner {
     justify-content: flex-end;
     background: url(../images/bg_productpage_banner.png);
     color: white;
 }
-#product-name {
+.product-name {
     font-family: PingFangSC-Regular;
     font-size: 60px;
     line-height: 78px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
-#productpage p.banner-p {
+.productpage p.banner-p {
     width: 614px;
     margin-bottom: 58px;
     font-family: PingFangSC-Regular;

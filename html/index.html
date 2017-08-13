@@ -6,24 +6,25 @@
   <title>spark</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/page.css">
+  <style>
+    .homepage .nav-header li:first-child a::after {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <div id="homepage" class="container">
-    <header>
-    <section class="header-container">
-        <div id="logo">
-        <img src="images/logo_initial.png" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        </div>
-        <nav id = "nav-header">
-            <ul>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="">Subscribe</a></li>
-            </ul>
-        </nav>
-    </section>
-    
+  <div class="homepage container">
+    <header class="header-container">
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+    <nav class="nav-header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="">Subscribe</a></li>
+        </ul>
+    </nav>
 </header>
     <div class="main">
       <!-- banner -->
@@ -32,7 +33,7 @@
         <h2>Book Online for the Best Gear</h2>
       </section>
       <!-- products display-->
-      <div id="products-display">
+      <div class="products-display">
         <!-- product-item1 -->        
         <section class="item1 section-limited">
           <div class="product-img">
@@ -100,7 +101,7 @@
         <!-- footer part -->
         <div class="footer-container">
             <div class="flex-wrapper">
-                <div id="connnect-information">
+                <div class="connnect-information">
                     <ul>
                         <li class="item">
                             <img class="connect-icon" src="images/icon_email.png" alt="">
@@ -116,7 +117,7 @@
                         </li>
                     </ul>
                 </div>
-                <nav id="footer-nav">
+                <nav class="footer-nav">
                     <ul>
                         <li>BLOG</li>
                         <li>FAQ</li>
