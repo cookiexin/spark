@@ -1,12 +1,14 @@
 /* homepage */
-#homepage .banner {
-    background:#ffffff;
+.homepage .banner {
     color:#000000;
     letter-spacing:0;
     text-align:center;
+    background-image: url('../images/home-banner.jpg');
+    background-position: center;
+    background-size: cover;
 }
-#homepage .banner h1 { font-size: 64px;}
-#homepage .banner h2 { font-size: 36px;}
+.homepage .banner h1 { font-size: 64px;}
+.homepage .banner h2 { font-size: 36px;}
 
 /* .products-display section:first-child {
     background:#edf8fa;
@@ -22,6 +24,9 @@
     margin-right: 90px; 
     flex-basis: 43%;
     text-align: center;
+}
+.products-display .item1 {
+    background:#edf8fa;
 }
 
 .product-word {
@@ -115,6 +120,7 @@ h3.product-description {
     text-decoration: line-through;
 }
 button.btn-book {
+    cursor: pointer;
     border: 1px solid #f95959;
     border-radius: 4px;
     width: 219px;

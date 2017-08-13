@@ -76,8 +76,8 @@ header {
 .subscribe-part {
     /* padding: 108px 225px; */
     padding-top: 108px;
-    background:rgba(249,89,89,0.10);
     box-sizing: border-box;
+    background: url('../images/subscribe-bg.png') repeat;
 }
 .subscribe-container {
     display: flex;
@@ -266,8 +266,6 @@ p.copyright {
 .banner h1 { margin-bottom: 20px;}
 section.section-limited { 
     display: flex;
+    justify-content: center;
     height: 550px;
-}
-section:nth-child(2) {
-    background:#edf8fa;
 }

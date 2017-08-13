@@ -17,8 +17,11 @@
     subscribe.click(function() {
         // to do
         // 后台交互
-        if (!isEmail(eamil.val())) {
-            alert('请输入输入正确的邮箱')
+        if (!eamil.val()) {
+            alert('请输入您的邮箱')
+            return;
+        } else if (!isEmail(eamil.val())) {
+            alert('请输入正确的邮箱地址')
             return;
         }
         popup.fadeIn(200)
