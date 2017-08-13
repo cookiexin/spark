@@ -96,6 +96,7 @@ input.subscribe-input {
     font-size: 36px;
 }
 button.btn-subscribe {
+    cursor: pointer;
     width: 272px;
     height: 75px;
     background: #f95959;
@@ -119,6 +120,12 @@ button.btn-subscribe {
     margin-bottom: 18px;
     align-items: center;
 }
+.connnect-information li.item:nth-child(3) p {
+    font-size: 14px;
+}
+.connnect-information li.item:nth-child(3) img {
+    align-self: flex-start;
+}
 .connnect-information ul li p {
     margin-left: 15px;
     font-size: 16px;
@@ -140,6 +147,102 @@ button.btn-subscribe {
 }
 p.copyright {
     text-align: center;
+}
+
+/* public popup */
+.popup {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(to right, rgba(10,10,10,0.7), rgba(200, 200, 200, 0.7), rgba(10,10,10,0.7));
+}
+.popup .pop-main {
+    position: relative;
+    padding: 100px;
+    background-color: #fff;
+    border:1px solid #979797;
+    border-radius:10px;
+}
+.popup .pop-close {
+    cursor: pointer;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border:4px solid #979797;
+    background: url('../images/close.png') no-repeat center center #fff;
+    background-size: 50px 50px;
+}
+.pop-sms {
+    display: flex;
+}
+.pop-sms .icon-sms {
+    display: block;
+    width: 106px;
+    height: 74px;
+    flex-shrink: 0;
+}
+.pop-sms-wrap {
+    display: none;
+}
+.pop-sms .sms-des {
+    max-width: 550px;
+    margin-left: 70px;
+    font-size:36px;
+    color:#1697a8;
+}
+.popup .pop-ok {
+    cursor: pointer;
+    display: block;
+    font-size: 36px;
+    color: #777777;
+    border:1px solid #777777;
+    border-radius:4px;
+    width:247px;
+    height:76px;
+    background-color: transparent;
+    text-align: center;
+    margin: 35px auto 0 auto;
+    transition: all 0.3s;
+}
+.popup .pop-ok:hover {
+    color: #fff;
+    border:1px solid #1697a8;
+    background-color: #1697a8;
+}
+.pop-booking {
+    display: flex;
+}
+.pop-booking img {
+    display: block;
+    width: 151px;
+    height: 157px;
+}
+.pop-booking-des {
+    width: 500px;
+    margin-left: 70px;
+    color:#1697a8;
+}
+.pop-booking-des .pop-booking-title {
+    font-size: 36px;
+}
+.pop-booking-des .pop-booking-sub-title {
+    margin-top: 70px;
+    font-size: 48px;
+}
+.pop-booking-des .pop-booking-sub-title span {
+    display: block;
+    color: #f95959;
+    margin-top: 10px;
 }
 
 /* some other public css */

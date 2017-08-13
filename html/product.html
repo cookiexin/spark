@@ -22,7 +22,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Product</a></li>
-            <li><a href="">Subscribe</a></li>
+            <li><a href="javascript:;" class="subscribe-link">Subscribe</a></li>
         </ul>
     </nav>
 </header>
@@ -41,10 +41,10 @@
       <!-- product details -->
       <section class="product-details section-limited">
         <div class="product-img">
-          <img src="" alt="">
+          <img src="images/pro_DJISPARK.png" alt="">
         </div>
         <div class="product-word">
-            <h3 class="product-feature">Smart, reliable, and incredibly intuitive</div>
+            <h3 class="product-feature">Smart, reliable, and incredibly intuitive</h3>
             <div class="product-parameter">
               <ul>
                 <li>
@@ -76,41 +76,43 @@
       <!-- product-specification -->
       <section class="product-specification section-limited">
         <div class="product-img">
-          <img src="" alt="">
+          <img width="525" height="309" src="images/pro_des.png" alt="">
         </div>
-        <div class="parts-list">
-          <ul>
-            <li>
-              <h4>Drone</h4>
-              <p>1</p>
-            </li>
-            <li>
-              <h4>Paddle</h4>
-              <p>6</p>
-            </li>
-            <li>
-              <h4>Remote control</h4>
-              <p>1</p>
-            </li>
-            <li>
-              <h4>Charger</h4>
-              <p>1</p>
-            </li>
-            <li>
-              <h4>Battery</h4>
-              <p>2</p>
-            </li>
-            <li>
-              <h4>USB wire</h4>
-              <p>1</p>
-            </li>
-            <li>
-              <h4>Instruction book</h4>
-              <p>1</p>
-            </li>
-          </ul>
+        <div class="parts-wrap">
+            <div class="parts-list">
+              <ul>
+                <li>
+                  <h4>Drone</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Paddle</h4>
+                  <p>6</p>
+                </li>
+                <li>
+                  <h4>Remote control</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Charger</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Battery</h4>
+                  <p>2</p>
+                </li>
+                <li>
+                  <h4>USB wire</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Instruction book</h4>
+                  <p>1</p>
+                </li>
+              </ul>
+            </div>
+            <div class="remind"><p>Please read the instructions carefully，follow the rules</p></div>
         </div>
-        <div class="remind"><p>Please read the instructions carefully，follow the rules</p></div>
       </div>
     </section>
     <footer>
@@ -166,5 +168,35 @@
     </div>
 </footer>
   </div>
+  <!-- popup -->
+  <div class="popup">
+    <div class="pop-main">
+        <div class="pop-sms-wrap">
+            <div class="pop-sms">
+                <img class="icon-sms" src="images/sms.png" alt="sms">
+                <div class="sms-des">
+                    Thanks for subscribing. We will send you voucher once online booking is available.
+                </div>
+            </div>
+            <button class="pop-ok">ok</button>
+        </div>
+        <div class="class-pop-booking-wrap">
+            <div class="pop-booking">
+                <img class="icon-booking"src="images/booking.png" alt="booking">
+                <div class="pop-booking-des">
+                    <div class="pop-booking-title">online booking coming soon</div>
+                    <div class="pop-booking-sub-title">
+                        phone booking only
+                        <span>+10-100-100</span>
+                    </div>
+                </div>
+            </div>
+            <button class="pop-ok">ok</button>
+        </div>
+        <div class="pop-close"></div>
+    </div>
+</div>
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

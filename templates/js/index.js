@@ -1,0 +1,22 @@
+(function() {
+    var popup = $('.popup')
+    var popClose = $('.pop-close')
+    var subscribe = $('.btn-subscribe')
+    var subscribeLink = $('.subscribe-link')
+    subscribeLink.click(function() {
+        $('html,body').animate({
+            scrollTop: subscribe.offset().top - 300
+        }, 700);
+        subscribe.offset().top
+    })
+    popClose.click(function() {
+        popup.fadeOut(200)
+    })
+
+    subscribe.click(function() {
+        // to do
+        // 后台交互
+        popup.fadeIn(200)
+        popup.css('display', 'flex')
+    })
+})()

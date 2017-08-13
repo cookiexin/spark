@@ -13,26 +13,89 @@
     background:#edf8fa;
 } */
 .products-display section.section-limited {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: relative;
     /* padding: 6% 50px; */
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .product-img {
     margin-right: 90px; 
-    flex-basis: 43%;
+    -ms-flex-preferred-size: 43%; 
+        flex-basis: 43%;
     text-align: center;
 }
 
 .product-word {
     /* float: right;
     width: 640px; */
-    flex: 0 1 650px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 650px;
+            flex: 0 1 650px;
     margin-top: -18px;
     color: #000000;
     letter-spacing: 0;
     text-align: left;
+}
+.product-details {
+    padding: 6% 50px;
+}
+.product-details .product-word {
+    font-size: 32px;
+}
+.product-details .product-parameter {
+    color: #777777;
+    margin: 20px 0;
+}
+.product-details .product-parameter li {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+.product-details .product-parameter li h4 {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 180px;
+    margin-right: 20px;
+}
+.product-details .product-parameter li.rental-price {
+    color: #000000;
+}
+.product-details .product-parameter li.rental-price p {
+    font-size: 48px;
+}
+.product-details .product-parameter li.rental-price p span {
+    color: #f95959;
+}
+.product-specification {
+    height: auto !important;
+    padding: 6% 50px;
+}
+.product-specification .parts-list {
+    font-size: 28px;
+}
+.product-specification .parts-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+}
+.product-specification .remind{
+    font-size:28px;
+    color:#1697a8;
+    margin-top: 60px;
 }
 h2.product-title {
     margin-bottom: 14px;
@@ -81,7 +144,9 @@ button.btn-book {
 
 /* productpage */
 .productpage .banner {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     background: url(../images/bg_productpage_banner.png);
     color: white;
 }
@@ -99,3 +164,4 @@ button.btn-book {
     line-height: 33px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
+/*# sourceMappingURL=page.css.map */

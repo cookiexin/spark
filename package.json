@@ -9,11 +9,13 @@
   "author": "cloudIC",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "browser-sync": "^2.9.11",
     "ejs": "^2.3.4",
     "gulp": "^3.9.1",
-    "gulp-data": "^1.2.1",
     "gulp-ejs": "^1.2.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.0",
     "gulp-util": "^3.0.4"
   }
 }
