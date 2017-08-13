@@ -1,0 +1,131 @@
+/* css reset */
+body {
+    margin: 0;
+}
+ul,li,h1,h2,h3,h4,h5,h6,p { 
+    margin: 0;
+    padding: 0;
+}
+ul { list-style-type: none;}
+h1,h2,h3,h4,h5,h6 { font-weight: normal;}
+a {
+    color: black;
+    text-decoration: none;
+}
+button { border-style: none;}
+
+.container {
+    width: 100%;
+    font-family: Helvetica;
+}
+
+
+/* public header */
+header {
+    height: 100px;
+    background-color: #f95959;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    margin: 15px 0 0 45px;
+}
+#nav-header {
+    padding-top: 22px;
+}
+#nav-header li {
+    display: inline-block;
+    margin-right: 44px;
+}
+#nav-header li a {
+    font-family:Helvetica;
+    font-size:36px;
+    color:#ffffff;
+    letter-spacing:0;
+    text-align:center;
+}
+
+/* public footer */
+.subscribe-part {
+    /* padding: 108px 225px; */
+    padding-top: 108px;
+    background:rgba(249,89,89,0.10);
+    box-sizing: border-box;
+}
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 990px;
+}
+h2.subscribe-description {
+    margin-bottom: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 32px;
+}
+.subscribe-func {
+    display: flex;
+    width: 100%;
+}
+input.subscribe-input {
+    flex-grow: 1;
+    height: 73px;
+    margin-right: 33px;
+    padding: 12px 0 12px 22px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #f95959;
+    border-radius: 4px; 
+    font-size: 36px;
+}
+button.btn-subscribe {
+    width: 272px;
+    height: 75px;
+    background: #f95959;
+    border-radius: 4px; 
+    color: white;
+    font-size: 36px;
+}
+
+.footer-container {
+    padding: 30px 45px 18px 45px;
+    background-color: #777777;
+    border:1px solid #979797;
+    color: white;
+}
+.flex-wrapper { 
+    display: flex;
+    justify-content: space-between;
+}
+#connnect-information li.item {
+    display: flex;
+    margin-bottom: 18px;
+    align-items: center;
+}
+
+#connnect-information ul li p {
+    margin-left: 15px;
+    font-size: 16px;
+}
+#footer-nav ul {
+    display: flex;
+}
+#footer-nav ul li {
+    margin-right: 30px;
+    font-size: 24px;
+}
+.social-network ul {
+    display: flex;
+}
+.social-network ul li {
+    /* float: left; */
+    margin-left: 20px;
+}
+p.copyright {
+    text-align: center;
+}
+
+
