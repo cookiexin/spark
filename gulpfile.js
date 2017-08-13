@@ -37,6 +37,7 @@ gulp.task('resource', function() {
     .pipe(gulp.dest(distDir));
     gulp.src([
             tplDir + '/**/*.js',
+            tplDir + '/font/**/*',
             tplDir + '/**/*.png',
             tplDir + '/**/*.jpeg',
             tplDir + '/**/*.jpg'
@@ -59,6 +60,7 @@ gulp.task('dev', ['ejs', 'resource'], function() {
     gulp.watch([
         tplDir + '/**/*.css',
         tplDir + '/**/*.js',
+        tplDir + '/font/**/*',
         tplDir + '/**/*.png',
         tplDir + '/**/*.jpeg',
         tplDir + '/**/*.jpg'], ['resource']);

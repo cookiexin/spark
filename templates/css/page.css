@@ -1,7 +1,6 @@
 /* homepage */
 #homepage .banner {
-    background:#ffffff;    
-    font-family:Helvetica;
+    background:#ffffff;
     color:#000000;
     letter-spacing:0;
     text-align:center;
@@ -83,7 +82,7 @@
 }
 h2.product-title {
     margin-bottom: 14px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 60px;
     line-height: 78px;
 }
@@ -108,7 +107,6 @@ h3.product-description {
     background: #1697a8;
     border-radius: 4px;
     color: white;
-    font-family: Helvetica;
     font-size: 28px;
 }
 .product-price p.unvalid {
@@ -133,7 +131,7 @@ button.btn-book {
     color: white;
 }
 .product-name {
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 60px;
     line-height: 78px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
@@ -141,7 +139,7 @@ button.btn-book {
 .productpage p.banner-p {
     width: 614px;
     margin-bottom: 58px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 24px;
     line-height: 33px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);

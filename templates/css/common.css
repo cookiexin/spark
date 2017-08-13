@@ -16,9 +16,21 @@ button { border-style: none;}
 
 .container {
     width: 100%;
-    font-family: Helvetica;
 }
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica.eot');
+    src: url('../font/Helvetica.eot?#iefix') format('embedded-opentype'),
+            url('../font/Helvetica.woff') format('woff'),
+        url('../font/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: Helvetica;
+}
 
 /* public header */
 header {
@@ -46,7 +58,6 @@ header {
     margin-right: 44px;
 }
 .nav-header li a {
-    font-family:Helvetica;
     font-size:36px;
     color:#ffffff;
     letter-spacing:0;
@@ -77,7 +88,7 @@ header {
 }
 h2.subscribe-description {
     margin-bottom: 40px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 32px;
 }
 .subscribe-func {
