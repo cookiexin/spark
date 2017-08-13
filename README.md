@@ -12,3 +12,9 @@ npm install
 ```shell
 npm run dev
 ```
+
+## 打包
+```shell
+npm run build
+```
+运行完后会产生**html**文件夹既是打包文件夹。

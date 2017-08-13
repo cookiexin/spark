@@ -4,7 +4,7 @@
   "main": "templates/index.html",
   "scripts": {
     "dev": "gulp dev",
-    "ejs": "gulp ejs"
+    "build": "gulp build"
   },
   "author": "cloudIC",
   "license": "MIT",

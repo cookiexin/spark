@@ -63,3 +63,5 @@ gulp.task('dev', ['ejs', 'resource'], function() {
         tplDir + '/**/*.jpeg',
         tplDir + '/**/*.jpg'], ['resource']);
 });
+
+gulp.task('build', ['ejs', 'resource'])
