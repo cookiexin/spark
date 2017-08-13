@@ -4,32 +4,163 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>spark product</title>
+   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
 </head>
 <body>
-  <div class="container">
+  <div id="productpage" class="container">
     <header>
-    <div class="container">
+    <section class="header-container">
         <div id="logo">
-        <img src="" alt="">
+        <img src="images/logo_initial.png" alt="">
         <img src="" alt="">
         <img src="" alt="">
         </div>
-        <nav>
+        <nav id = "nav-header">
             <ul>
-                <li>Product</li>
-                <li>Subscribe</li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="">Subscribe</a></li>
             </ul>
         </nav>
-    </div>
+    </section>
     
 </header>
     <div class="main">
-        产品页面
-    </div>
+      <!-- banner -->
+      <section class="banner  section-limited">
+        <!-- <div class="word-container"> -->
+          <h1 id="product-name">DJI SPARK</h1>
+          <p class="banner-p">mini drone that features all of DJI's signature technologies, allowing you 
+          to seize the moment whenever you feel inspired. With intelligent flight 
+          control options, a mechanical gimbal, and a camera with incredible image 
+          quality, Spark empowers you to push your creative boundaries.</p>
+        <!-- </div> -->
+      </section>
+        
+      <!-- product details -->
+      <section id="product-details" class="section-limited">
+        <div class="product-img">
+          <img src="" alt="">
+        </div>
+        <div class="product-word">
+            <h3 class="product-feature">Smart, reliable, and incredibly intuitive</div>
+            <div class="product-parameter">
+              <ul>
+                <li>
+                  <h4>2 km</h4>
+                  <p>HD Wi-Fi Video Transmission</p>
+                </li>
+                <li>
+                  <h4>16 min</h4>
+                  <p>Max Flight Time</p>
+                </li>
+                <li>
+                  <h4>ActiveTrack</h4>
+                  <p>Track your target from in front or behind, or even circle around it.</p>
+                </li>
+                <li>
+                  <h4>selling Price</h4>
+                  <p>699 $</p>
+                </li>
+                <li class="rental-price">
+                  <h4>rental price</h4>
+                  <p><span>50</span>$ / day</p>
+                </li>
+              </ul>
+            </div>
+            <button class="btn-book">Book Now</button>
+          </div>
+      </section>
+
+      <!-- product-specification -->
+      <section id="product-specification" class = "section-limited">
+        <div class="product-img">
+          <img src="" alt="">
+        </div>
+        <div class="parts-list">
+          <ul>
+            <li>
+              <h4>Drone</h4>
+              <p>1</p>
+            </li>
+            <li>
+              <h4>Paddle</h4>
+              <p>6</p>
+            </li>
+            <li>
+              <h4>Remote control</h4>
+              <p>1</p>
+            </li>
+            <li>
+              <h4>Charger</h4>
+              <p>1</p>
+            </li>
+            <li>
+              <h4>Battery</h4>
+              <p>2</p>
+            </li>
+            <li>
+              <h4>USB wire</h4>
+              <p>1</p>
+            </li>
+            <li>
+              <h4>Instruction book</h4>
+              <p>1</p>
+            </li>
+          </ul>
+        </div>
+        <div class="remind"><p>Please read the instructions carefully，follow the rules</p></div>
+      </div>
+    </section>
     <footer>
     <div class="container">
-        <div id="connnect information">
-
+        <!-- subscribe part -->
+        <section class="subscribe-part section-limited">
+            <div class="subscribe-container">
+                <h2 class="subscribe-description">Subscribe now and we will send you 50% online booking voucher and keep you updated.</h3>
+                <div class="subscribe-func">
+                    <input class="subscribe-input" type="text" placeholder="Your Email">
+                    <button class="btn-subscribe">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- footer part -->
+        <div class="footer-container">
+            <div class="flex-wrapper">
+                <div id="connnect-information">
+                    <ul>
+                        <li class="item">
+                            <img class="connect-icon" src="images/icon_email.png" alt="">
+                            <p>contact@cloudautomate.com</p>
+                        </li>
+                        <li class="item">
+                            <img class="connect-icon" src="images/icon_phone.png" alt="">                            
+                            <p>+01 111111</p>
+                        </li>
+                        <li class="item">
+                            <img class="connect-icon" src="images/icon_location.png" alt="">                            
+                            <p>Level 34, AMP Centre, 50 Bridge Street, <br>Sydney, NSW 2000, Australia</p>
+                        </li>
+                    </ul>
+                </div>
+                <nav id="footer-nav">
+                    <ul>
+                        <li>BLOG</li>
+                        <li>FAQ</li>
+                        <li>TEAM</li>
+                    </ul>
+                </nav>
+                <div class="social-network">
+                    <ul>
+                        <li><a href=""><img src="images/icon_facebook.png"></a></li>
+                        <li><a href=""><img src="images/icon_twitter.png"></a></li>
+                        <li><a href=""><img src="images/icon_instagram.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="copyright">All Rights Reserved - Terms and Conditions of Service - Privacy Policy</div>
         </div>
     </div>
 </footer>

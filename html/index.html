@@ -4,34 +4,135 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>spark</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/page.css">
 </head>
 <body>
-  <div class="container">
+  <div id="homepage" class="container">
     <header>
-    <div class="container">
+    <section class="header-container">
         <div id="logo">
-        <img src="" alt="">
+        <img src="images/logo_initial.png" alt="">
         <img src="" alt="">
         <img src="" alt="">
         </div>
-        <nav>
+        <nav id = "nav-header">
             <ul>
-                <li>Product</li>
-                <li>Subscribe</li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="">Subscribe</a></li>
             </ul>
         </nav>
-    </div>
+    </section>
     
 </header>
     <div class="main">
-      首页
-      <img src="./images/avatar.png" alt="">
+      <!-- banner -->
+      <section class="banner section-limited">
+        <h1>Enjoy it, without Buying it</h1>
+        <h2>Book Online for the Best Gear</h2>
+      </section>
+      <!-- products display-->
+      <div id="products-display">
+        <!-- product-item1 -->        
+        <section class="item1 section-limited">
+          <div class="product-img">
+            <img src="images/pro_DJIMAVIC.png" alt="">
+          </div>
+          <div class="product-word">
+            <h2 class="product-title">DJI MAVIC</h2>
+            <h3 class="product-description">Compact, FlightAutonomy, 4K Camera</h3>
+            <div class="product-price">
+              <p class="valid"><span>50</span> $／day</p>
+              <button class="btn-detail">Detail</button>
+              <p class="unvalid">1.381 $</p>
+            </div>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </section>
+        <!-- product-item2 -->
+        <section class="item2 section-limited">
+          <div class="product-img">
+            <img src="images/pro_DJISPARK.png" alt="">
+          </div>
+          <div class="product-word">
+            <h2 class="product-title">DJI SPARK</h2>
+            <h3 class="product-description">palm size, Gesture control，FlightAutonomy</h3>
+            <div class="product-price">
+              <p class="valid"><span>50</span> $ / day</p>
+              <button class="btn-detail">Detail</button>
+              <p class="unvalid">1.381 $</p>
+            </div>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </section>
+        <!-- product-item3 -->        
+        <section class="item3 section-limited">
+          <div class="product-img">
+            <img src="images/pro_DJISPARK.png" alt="">
+          </div>
+          <div class="product-word">
+            <h2 class="product-title">DJI OSMO+</h2>
+            <h3 class="product-description">Advanced Stabilization, Detailed Panorama</h3>
+            <div class="product-price">
+              <p class="valid"><span>20</span> $ / day</p>
+              <button class="btn-detail">Detail</button>
+              <p class="unvalid">1.381 $</p>
+            </div>
+            <button class="btn-book">Book Now</button>
+          </div>
+        </div>
+      </section>
     </div>
+    <!-- footer -->
     <footer>
     <div class="container">
-        <div id="connnect information">
-
+        <!-- subscribe part -->
+        <section class="subscribe-part section-limited">
+            <div class="subscribe-container">
+                <h2 class="subscribe-description">Subscribe now and we will send you 50% online booking voucher and keep you updated.</h3>
+                <div class="subscribe-func">
+                    <input class="subscribe-input" type="text" placeholder="Your Email">
+                    <button class="btn-subscribe">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- footer part -->
+        <div class="footer-container">
+            <div class="flex-wrapper">
+                <div id="connnect-information">
+                    <ul>
+                        <li class="item">
+                            <img class="connect-icon" src="images/icon_email.png" alt="">
+                            <p>contact@cloudautomate.com</p>
+                        </li>
+                        <li class="item">
+                            <img class="connect-icon" src="images/icon_phone.png" alt="">                            
+                            <p>+01 111111</p>
+                        </li>
+                        <li class="item">
+                            <img class="connect-icon" src="images/icon_location.png" alt="">                            
+                            <p>Level 34, AMP Centre, 50 Bridge Street, <br>Sydney, NSW 2000, Australia</p>
+                        </li>
+                    </ul>
+                </div>
+                <nav id="footer-nav">
+                    <ul>
+                        <li>BLOG</li>
+                        <li>FAQ</li>
+                        <li>TEAM</li>
+                    </ul>
+                </nav>
+                <div class="social-network">
+                    <ul>
+                        <li><a href=""><img src="images/icon_facebook.png"></a></li>
+                        <li><a href=""><img src="images/icon_twitter.png"></a></li>
+                        <li><a href=""><img src="images/icon_instagram.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <p class="copyright">All Rights Reserved - Terms and Conditions of Service - Privacy Policy</div>
         </div>
     </div>
 </footer>
