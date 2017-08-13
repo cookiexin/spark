@@ -35,6 +35,7 @@
     text-align: left;
 }
 .product-details {
+    display: flex;
     padding: 6% 50px;
 }
 .product-details .product-word {
@@ -64,7 +65,7 @@
     color: #f95959;
 }
 .product-specification {
-    height: auto !important;
+    display: flex;
     padding: 6% 50px;
 }
 .product-specification .parts-list {
