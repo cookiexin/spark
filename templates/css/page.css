@@ -98,4 +98,49 @@ button.btn-book {
     font-size: 24px;
     line-height: 33px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+    text-align: center;
+    text-indent: 2em;
+}
+#productpage section.section-limited {
+    align-items: center;
+    height: 630px;
+}
+#product-details h3.product-feature {
+    margin-bottom: 18px;
+    font-size: 32px;
+    line-height: 50px;
+}
+.product-parameter ul li {
+    display: flex;
+    margin-bottom: 10px;    
+    font-size: 32px;
+    color: #777777;
+}
+.product-parameter ul li h4 {
+    flex: 0 0 210px;
+    line-height: 38px;
+}
+.product-parameter ul li.rental-price h4 {
+    line-height: 48px;
+}
+.product-parameter ul li.rental-price {
+    padding: 16px 0;
+    font-size: 36px;
+    line-height: 48px;    
+    color: #000000;
+}
+.product-parameter ul li.rental-price p {
+    font-size: 48px;
+}
+.product-parameter ul li.rental-price p span {
+    color: red;
+}
+
+.parts-list ul li {
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.parts-list ul li h4 {
+    flex: 0 0 470px;
 }
