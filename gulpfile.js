@@ -4,9 +4,11 @@ var fs = require('fs')
 var path = require('path')
 var gulp = require('gulp')
 var gutil = require('gulp-util')
-var data = require('gulp-data')
 var browserSync = require('browser-sync')
 var ejs = require('gulp-ejs')
+var postcss      = require('gulp-postcss')
+var sourcemaps   = require('gulp-sourcemaps')
+var autoprefixer = require('autoprefixer')
 
 // 模版目录
 var tplDir = './templates'
@@ -27,7 +29,17 @@ gulp.task('ejs-watch', ['ejs']);
 
 gulp.task('resource', function() {
     gulp.src([
-            tplDir + '/**/*.css',
+        tplDir + '/**/*.css',
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(distDir));
+    gulp.src([
+            tplDir + '/**/*.js',
+            tplDir + '/**/*.eot',
+            tplDir + '/**/*.ttf',
+            tplDir + '/**/*.woff',
             tplDir + '/**/*.png',
             tplDir + '/**/*.jpeg',
             tplDir + '/**/*.jpg'
@@ -49,7 +61,13 @@ gulp.task('dev', ['ejs', 'resource'], function() {
     gulp.watch([tplDir + '/**/*.ejs', tplDir + '/**/*.html'], ['ejs-watch']);
     gulp.watch([
         tplDir + '/**/*.css',
+        tplDir + '/**/*.js',
+        tplDir + '/**/*.eot',
+        tplDir + '/**/*.ttf',
+        tplDir + '/**/*.woff',
         tplDir + '/**/*.png',
         tplDir + '/**/*.jpeg',
         tplDir + '/**/*.jpg'], ['resource']);
 });
+
+gulp.task('build', ['ejs', 'resource'])

@@ -1,18 +1,19 @@
 /* homepage */
-#homepage .banner {
-    background:#ffffff;    
-    font-family:Helvetica;
+.homepage .banner {
     color:#000000;
     letter-spacing:0;
     text-align:center;
+    background-image: url('../images/home-banner.jpg');
+    background-position: center;
+    background-size: cover;
 }
-#homepage .banner h1 { font-size: 64px;}
-#homepage .banner h2 { font-size: 36px;}
+.homepage .banner h1 { font-size: 64px;}
+.homepage .banner h2 { font-size: 36px;}
 
-/* #products-display section:first-child {
+/* .products-display section:first-child {
     background:#edf8fa;
 } */
-#products-display section.section-limited {
+.products-display section.section-limited {
     display: flex;
     align-items: center;
     display: relative;
@@ -20,9 +21,12 @@
     box-sizing: border-box;
 }
 .product-img {
-    margin-right: 90px; 
+    margin-right: 60px; 
     flex-basis: 43%;
     text-align: center;
+}
+.products-display .item1 {
+    background:#edf8fa;
 }
 
 .product-word {
@@ -34,9 +38,57 @@
     letter-spacing: 0;
     text-align: left;
 }
+.product-details {
+    display: flex;
+    padding: 6% 50px;
+    background: #edf8fa;
+}
+.product-details .product-word {
+    font-size: 32px;
+}
+.product-details .product-parameter {
+    color: #777777;
+    margin: 20px 0;
+}
+.product-details .product-parameter li {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+}
+.product-details .product-parameter li h4 {
+    flex-shrink: 0;
+    width: 180px;
+    margin-right: 20px;
+}
+.product-details .product-parameter li.rental-price {
+    color: #000000;
+}
+.product-details .product-parameter li.rental-price p {
+    font-size: 48px;
+}
+.product-details .product-parameter li.rental-price p span {
+    color: #f95959;
+}
+.product-specification {
+    display: flex;
+    padding: 6% 50px;
+}
+.product-specification .parts-list {
+    font-size: 28px;
+}
+.product-specification .parts-list li {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 40px;
+}
+.product-specification .remind{
+    font-size:28px;
+    color:#1697a8;
+    margin-top: 60px;
+}
 h2.product-title {
     margin-bottom: 14px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 60px;
     line-height: 78px;
 }
@@ -61,7 +113,6 @@ h3.product-description {
     background: #1697a8;
     border-radius: 4px;
     color: white;
-    font-family: Helvetica;
     font-size: 28px;
 }
 .product-price p.unvalid {
@@ -70,6 +121,7 @@ h3.product-description {
     text-decoration: line-through;
 }
 button.btn-book {
+    cursor: pointer;
     border: 1px solid #f95959;
     border-radius: 4px;
     width: 219px;
@@ -80,21 +132,21 @@ button.btn-book {
 }
 
 /* productpage */
-#productpage .banner {
+.productpage .banner {
     justify-content: flex-end;
     background: url(../images/bg_productpage_banner.png);
     color: white;
 }
-#product-name {
-    font-family: PingFangSC-Regular;
+.product-name {
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 60px;
     line-height: 78px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
-#productpage p.banner-p {
+.productpage p.banner-p {
     width: 614px;
     margin-bottom: 58px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 24px;
     line-height: 33px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);

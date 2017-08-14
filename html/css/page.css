@@ -1,42 +1,113 @@
 /* homepage */
-#homepage .banner {
-    background:#ffffff;    
-    font-family:Helvetica;
+.homepage .banner {
     color:#000000;
     letter-spacing:0;
     text-align:center;
+    background-image: url('../images/home-banner.jpg');
+    background-position: center;
+    background-size: cover;
 }
-#homepage .banner h1 { font-size: 64px;}
-#homepage .banner h2 { font-size: 36px;}
+.homepage .banner h1 { font-size: 64px;}
+.homepage .banner h2 { font-size: 36px;}
 
-/* #products-display section:first-child {
+/* .products-display section:first-child {
     background:#edf8fa;
 } */
-#products-display section.section-limited {
+.products-display section.section-limited {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     display: relative;
     /* padding: 6% 50px; */
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .product-img {
-    margin-right: 90px; 
-    flex-basis: 43%;
+    margin-right: 60px; 
+    -ms-flex-preferred-size: 43%; 
+        flex-basis: 43%;
     text-align: center;
+}
+.products-display .item1 {
+    background:#edf8fa;
 }
 
 .product-word {
     /* float: right;
     width: 640px; */
-    flex: 0 1 650px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 650px;
+            flex: 0 1 650px;
     margin-top: -18px;
     color: #000000;
     letter-spacing: 0;
     text-align: left;
 }
+.product-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6% 50px;
+    background: #edf8fa;
+}
+.product-details .product-word {
+    font-size: 32px;
+}
+.product-details .product-parameter {
+    color: #777777;
+    margin: 20px 0;
+}
+.product-details .product-parameter li {
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+.product-details .product-parameter li h4 {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 180px;
+    margin-right: 20px;
+}
+.product-details .product-parameter li.rental-price {
+    color: #000000;
+}
+.product-details .product-parameter li.rental-price p {
+    font-size: 48px;
+}
+.product-details .product-parameter li.rental-price p span {
+    color: #f95959;
+}
+.product-specification {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 6% 50px;
+}
+.product-specification .parts-list {
+    font-size: 28px;
+}
+.product-specification .parts-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 40px;
+}
+.product-specification .remind{
+    font-size:28px;
+    color:#1697a8;
+    margin-top: 60px;
+}
 h2.product-title {
     margin-bottom: 14px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 60px;
     line-height: 78px;
 }
@@ -61,7 +132,6 @@ h3.product-description {
     background: #1697a8;
     border-radius: 4px;
     color: white;
-    font-family: Helvetica;
     font-size: 28px;
 }
 .product-price p.unvalid {
@@ -70,6 +140,7 @@ h3.product-description {
     text-decoration: line-through;
 }
 button.btn-book {
+    cursor: pointer;
     border: 1px solid #f95959;
     border-radius: 4px;
     width: 219px;
@@ -80,21 +151,23 @@ button.btn-book {
 }
 
 /* productpage */
-#productpage .banner {
-    justify-content: flex-end;
+.productpage .banner {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     background: url(../images/bg_productpage_banner.png);
     color: white;
 }
-#product-name {
-    font-family: PingFangSC-Regular;
+.product-name {
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 60px;
     line-height: 78px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 }
-#productpage p.banner-p {
+.productpage p.banner-p {
     width: 614px;
     margin-bottom: 58px;
-    font-family: PingFangSC-Regular;
+    font-family: PingFangSC-Regular Helvetica;
     font-size: 24px;
     line-height: 33px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.50);
@@ -102,7 +175,9 @@ button.btn-book {
     text-indent: 2em;
 }
 #productpage section.section-limited {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 630px;
 }
 #product-details h3.product-feature {
@@ -111,13 +186,17 @@ button.btn-book {
     line-height: 50px;
 }
 .product-parameter ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;    
     font-size: 32px;
     color: #777777;
 }
 .product-parameter ul li h4 {
-    flex: 0 0 210px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 210px;
+            flex: 0 0 210px;
     line-height: 38px;
 }
 .product-parameter ul li.rental-price h4 {
@@ -137,10 +216,15 @@ button.btn-book {
 }
 
 .parts-list ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
     font-size: 28px;
 }
 .parts-list ul li h4 {
-    flex: 0 0 470px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 470px;
+            flex: 0 0 470px;
 }
+/*# sourceMappingURL=page.css.map */
