@@ -2,7 +2,7 @@
     var popup = $('.popup')
     var popClose = $('.pop-close')
     var subscribe = $('.btn-subscribe')
-    var eamil = $('.subscribe-input')
+    var email = $('.subscribe-input')
     var subscribeLink = $('.subscribe-link')
     subscribeLink.click(function() {
         $('html,body').animate({
@@ -17,18 +17,18 @@
     subscribe.click(function() {
         // to do
         // 后台交互
-        if (!eamil.val()) {
+        if (!email.val()) {
             alert('Please enter your email address')
             return;
-        } else if (!isEmail(eamil.val())) {
+        } else if (!isEmail(email.val())) {
             alert('Please enter the valid email address')
             return;
         }
-        $.post('dev/subscriber', { eamil: eamil.val() }, function(data) {
+        $.post('dev/subscriber', { email: email.val() }, function(data) {
             if (data.success) {
                 popup.fadeIn(200)
                 popup.css('display', 'flex')
-                eamil.val('')
+                email.val('')
             } else {
                 alert('Subscriber failed')
             }
