@@ -7,7 +7,7 @@
     subscribeLink.click(function() {
         $('html,body').animate({
             scrollTop: subscribe.offset().top - 300
-        }, 700);
+        }, 700)
         subscribe.offset().top
     })
     popClose.click(function() {
@@ -18,18 +18,24 @@
         // to do
         // 后台交互
         if (!eamil.val()) {
-            alert('please enter your email address')
+            alert('Please enter your email address')
             return;
         } else if (!isEmail(eamil.val())) {
-            alert('please enter the valid email address')
+            alert('Please enter the valid email address')
             return;
         }
-        popup.fadeIn(200)
-        popup.css('display', 'flex')
-        eamil.val('')
+        $.post('dev/subscriber', { eamil: eamil.val() }, function(data) {
+            if (data.success) {
+                popup.fadeIn(200)
+                popup.css('display', 'flex')
+                eamil.val('')
+            } else {
+                alert('Subscriber failed')
+            }
+        })
     })
     function isEmail(str){
-        var reg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/;
-        return reg.test(str);
+        var reg = /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/
+        return reg.test(str)
     }
 })()
