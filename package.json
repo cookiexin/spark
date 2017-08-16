@@ -1,5 +1,5 @@
 {
-  "name": "spark",
+  "name": "geek-rental",
   "version": "1.1.0",
   "main": "templates/index.html",
   "scripts": {

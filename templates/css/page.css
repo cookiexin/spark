@@ -6,13 +6,11 @@
     background-image: url('../images/home-banner.jpg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .homepage .banner h1 { font-size: 64px;}
 .homepage .banner h2 { font-size: 36px;}
 
-/* .products-display section:first-child {
-    background:#edf8fa;
-} */
 .products-display section.section-limited {
     display: flex;
     align-items: center;
@@ -25,9 +23,6 @@
     flex-basis: 43%;
     text-align: center;
 }
-.products-display .item1 {
-    background:#edf8fa;
-}
 
 .product-word {
     /* float: right;
@@ -38,9 +33,14 @@
     letter-spacing: 0;
     text-align: left;
 }
+.products-display .section-limited:hover {
+    background-color: #EDF8FA;
+}
 .product-details {
     display: flex;
     padding: 6% 50px;
+}
+.product-details:hover {
     background: #edf8fa;
 }
 .product-details .product-word {
@@ -72,6 +72,9 @@
 .product-specification {
     display: flex;
     padding: 6% 50px;
+}
+.product-specification:hover {
+    background-color: #edf8fa;
 }
 .product-specification .parts-list {
     font-size: 28px;
@@ -136,6 +139,7 @@ button.btn-book {
     justify-content: flex-end;
     background: url(../images/bg_productpage_banner.png);
     color: white;
+    background-attachment: fixed;
 }
 .product-name {
     font-family: PingFangSC-Regular Helvetica;

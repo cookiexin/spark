@@ -42,7 +42,8 @@ gulp.task('resource', function() {
             tplDir + '/**/*.woff',
             tplDir + '/**/*.png',
             tplDir + '/**/*.jpeg',
-            tplDir + '/**/*.jpg'
+            tplDir + '/**/*.jpg',
+            tplDir + '/**/*.ico',
         ])
         .pipe(gulp.dest(distDir));
 });
@@ -67,7 +68,8 @@ gulp.task('dev', ['ejs', 'resource'], function() {
         tplDir + '/**/*.woff',
         tplDir + '/**/*.png',
         tplDir + '/**/*.jpeg',
-        tplDir + '/**/*.jpg'], ['resource']);
+        tplDir + '/**/*.jpg',
+        tplDir + '/**/*.ico'], ['resource']);
 });
 
 gulp.task('build', ['ejs', 'resource'])
