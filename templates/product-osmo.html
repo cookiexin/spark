@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GeekRental</title>
+  <%- include _partial/head %>
+  <style>
+    .productpage .nav-header li:nth-child(2) a::after {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="productpage spark-container">
+    <%- include _partial/header %>
+    <div class="main">
+      <!-- banner -->
+      <section class="banner section-limited">
+        <!-- <div class="word-container"> -->
+          <h1 class="product-name">DJI SPARK</h1>
+          <p class="banner-p">mini drone that features all of DJI's signature technologies, allowing you 
+          to seize the moment whenever you feel inspired. With intelligent flight 
+          control options, a mechanical gimbal, and a camera with incredible image 
+          quality, Spark empowers you to push your creative boundaries.</p>
+        <!-- </div> -->
+      </section>
+        
+      <!-- product details -->
+      <section class="product-details">
+        <div class="product-img">
+          <img src="images/pro_DJISPARK.png" alt="">
+        </div>
+        <div class="product-word">
+            <h3 class="product-feature">Smart, reliable, and incredibly intuitive</h3>
+            <div class="product-parameter">
+              <ul>
+                <li>
+                  <h4>2 km</h4>
+                  <p>HD Wi-Fi Video Transmission</p>
+                </li>
+                <li>
+                  <h4>16 min</h4>
+                  <p>Max Flight Time</p>
+                </li>
+                <li>
+                  <h4>ActiveTrack</h4>
+                  <p>Track your target from in front or behind, or even circle around it.</p>
+                </li>
+                <li>
+                  <h4>selling Price</h4>
+                  <p>699 $</p>
+                </li>
+                <li class="rental-price">
+                  <h4>rental price</h4>
+                  <p><span>50</span> $ / day</p>
+                </li>
+              </ul>
+            </div>
+            <button class="btn-book">Book Now</button>
+          </div>
+      </section>
+
+      <!-- product-specification -->
+      <section class="product-specification">
+        <div class="product-img">
+          <img width="525" height="309" src="images/pro_des.png" alt="">
+        </div>
+        <div class="parts-wrap">
+            <div class="parts-list">
+              <ul>
+                <li>
+                  <h4>Drone</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Paddle</h4>
+                  <p>6</p>
+                </li>
+                <li>
+                  <h4>Remote control</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Charger</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Battery</h4>
+                  <p>2</p>
+                </li>
+                <li>
+                  <h4>USB wire</h4>
+                  <p>1</p>
+                </li>
+                <li>
+                  <h4>Instruction book</h4>
+                  <p>1</p>
+                </li>
+              </ul>
+            </div>
+            <div class="remind"><p>Please read the instructions carefully，follow the rules</p></div>
+        </div>
+      </div>
+    </section>
+    <%- include _partial/footer %>
+  </div>
+  <!-- popup -->
+  <%- include _partial/popup %>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-alert.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

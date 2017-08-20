@@ -178,6 +178,7 @@ p.copyright {
     right: 0;
     top: 0;
     bottom: 0;
+    z-index: 999;
     background-color: rgba(0, 0, 0, 0.7);
     background-image: linear-gradient(to right, rgba(10,10,10,0.7), rgba(200, 200, 200, 0.7), rgba(10,10,10,0.7));
 }
@@ -271,7 +272,7 @@ p.copyright {
     flex-direction: column;
 }
 .banner h1 { margin-bottom: 20px;}
-section.section-limited { 
+.section-limited { 
     display: flex;
     justify-content: center;
     height: 550px;

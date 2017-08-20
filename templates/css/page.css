@@ -11,7 +11,7 @@
 .homepage .banner h1 { font-size: 64px;}
 .homepage .banner h2 { font-size: 36px;}
 
-.products-display section.section-limited {
+.products-display .section-limited {
     display: flex;
     align-items: center;
     display: relative;
@@ -132,6 +132,11 @@ button.btn-book {
     background-color: rgba(0,0,0,0);
     color: #f95959;
     font-size: 36px;
+    transition: all .2s;
+}
+button.btn-book:hover {
+    color: #ffffff;
+    background-color: #f95959;
 }
 
 /* productpage */
@@ -157,7 +162,7 @@ button.btn-book {
     text-align: center;
     text-indent: 2em;
 }
-#productpage section.section-limited {
+#productpage .section-limited {
     align-items: center;
     height: 630px;
 }
